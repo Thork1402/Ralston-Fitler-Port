@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+background-color: #FFF; /*#FFF6EB;*/
+margin:auto;
+font-family: 'DM Sans', sans-serif;
+}
+
+.Name{
+margin: auto;
+width: 50%;
+padding: 2%;
+text-align: center;
+font-family: 'DM Serif Text', serif;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h3{
+margin: auto;
+width: 50%;
+text-align: center;
+}
+
+h3 a{
+    color: black;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.navbar{
+margin: auto;
+width: 70%;
+padding: 10px 0px 10px 0px;
+text-align: center;
+border-bottom-style: solid;
+}
+
+.navbar a{
+text-decoration: none;
+color: #000;
+padding:10%;
+}
+
+.work{
+    margin: auto;
+    text-align: center;
+    padding-top: 1;
+}
+.work img{
+    width: 35rem;
+    padding: 2rem;
+    
+}
+
+.footer{
+    width: 100%;
+    background-color:#000;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+}
+
+/*Project Page*/
+.workp{
+    margin: auto;
+    text-align: center;
+    padding-top: 1;
+}
+
+.ground{
+    background-color:#d8caff;
+    padding: 0 0 2rem 0;
+    
+}
+
+.workp img{
+        width: 800px;
+        padding: 2rem;
+        
+    }
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 2rem 10rem ;
+    margin: auto;
+    text-align: left;
+    align-items: center;
+  }
+  .column2 {
+    width: 70%;
+    padding: 50px;
+    margin: auto;
+    text-align: left;
+    align-items: center;
+  }
+  .columngif {
+    width: 100%;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.title{
+    text-align: center;
+    margin: auto;
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+.projectland{
+    width: 25rem;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+.projectlandfull {
+    width: 100%;
+}
+.projectlandfullgif {
+    width: 20rem;
+}
+.columndouble {
+    float: left;
+    width: 50%;
+    padding: 50px;
+    margin: auto;
+    text-align: right;
+    align-items: center;
+  }
+
+/*View Ports*/
+@media screen and (max-width:1024px) {
+    .column {
+        float: left;
+        width: 50%;
+        padding: 5rem;
+        margin: auto;
+        text-align: left;
+        align-items: center;
+      }
+    
+}
+@media screen and (max-width:768px) {
+
+    .column {
+        float: left;
+        width: 50%;
+        padding: 2rem;
+        margin: auto;
+        text-align: left;
+        align-items: center;
+      }
+      .column2{
+        width: 80%;
+        padding: 0rem;
+        margin: auto;
+        text-align: left;
+        align-items: center;
+      }
+}
+@media screen and (max-width:600px) {
+.navbar a{
+    margin: -10px;
+}
+.workp img{
+    width: 25rem;
+    padding: 2rem;
+            
+    }
+.column {
+    width: 100%;
+    }
+.work img{
+    width: 30rem;
+    padding: 2rem;
+        
+    }
+.projectland{
+    width: 23rem;
+}
+}
