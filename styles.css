@@ -5,6 +5,7 @@ body {
 background-color: #FFF; /*#FFF6EB;*/
 margin:auto;
 font-family: 'DM Sans', sans-serif;
+font-size: 20px;
 }
 
 .Name{
@@ -17,6 +18,9 @@ font-family: 'DM Serif Text', serif;
 
 h1{
     font-size: 4rem;
+}
+h2{
+   font-size: 25px; 
 }
 
 h3{
@@ -78,6 +82,11 @@ padding:10%;
     padding: 0 0 2rem 0;
     
 }
+.ground2{
+    background-color:rgb(182, 252, 228);
+    padding: 0 0 2rem 0;
+    
+}
 
 .workp img{
         width: 800px;
@@ -127,10 +136,18 @@ padding:10%;
     margin: auto;
 }
 .projectlandfull {
-    width: 100%;
+    width: 35rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
 }
+
 .projectlandfullgif {
     width: 20rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .columndouble {
     float: left;
@@ -140,6 +157,12 @@ padding:10%;
     text-align: right;
     align-items: center;
   }
+  .four{
+    text-align: center;
+    margin: auto;
+    font-size: 9rem;
+    padding-top: 2rem;
+}
 
 /*View Ports*/
 @media screen and (max-width:1024px) {
@@ -153,8 +176,11 @@ padding:10%;
       }
     
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:769px) {
 
+    .projectland{
+        width: 15rem;
+    }
     .column {
         float: left;
         width: 50%;
@@ -170,10 +196,19 @@ padding:10%;
         text-align: left;
         align-items: center;
       }
+      .navbar a{
+        margin: -10px;
+    }
+    .extra{
+        display: none;
+    }
+    .four{
+        font-size: 7rem;
+    }
 }
 @media screen and (max-width:600px) {
 .navbar a{
-    margin: -10px;
+    margin: -20px;
 }
 .workp img{
     width: 25rem;
@@ -184,11 +219,17 @@ padding:10%;
     width: 100%;
     }
 .work img{
-    width: 30rem;
+    width: 25rem;
     padding: 2rem;
         
     }
 .projectland{
     width: 23rem;
+}
+.projectlandfull{
+    width: 20rem;
+}
+.four{
+    font-size: 3rem;
 }
 }

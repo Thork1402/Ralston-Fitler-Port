@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Text&display=swap" rel="stylesheet">
+<title>Ralston Fitler | About Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<div class="Name">
+  <h3><a class="typewrite" data-period="2000" data-type='[ "UX Designer", "UX Researcher", "UI Designer", "I Love to Design." ]'>
+    <span class="wrap"></span>
+  </a></h3>
+<h1>Ralston Fitler</h1>
+</div>
+<div class="navbar">
+    <a href="index.html">Work</a>
+    <a href="about.html">About Me</a>
+    <a href="https://www.linkedin.com/in/ralstonfitler/">LinkedIn</a>
+</div>
+<!--Section 1-->
+
+<div class="row">
+    <div class="column">
+      <h2> Who is Ralston Fitler?</h2>
+      <p>I am a Creative Thinker and Problem Solver. My design process is simple: Discover, Define, Design and then Develop. I love to draw and sketch out ideas and solutions on whiteboards or anything I can get my hands on to help share my UX concept or design solution.</p>
+   <div class="extra"> <h2>Making a UX Designer</h2>
+    <p>When I started high school, I signed up for a web design class. The first day in the class I knew I wanted to do something with designing a digital space. Designing a website felt like something out of a Si-Fi movie, the ability to type in HTML and CSS in order to change the look and information on a webpage blew my mind. Naturally, I wanted to learn at an accelerated pace, so I would spend my free time learning how to add and change certain elements of a webpage. This ranged from changing the background color all the way to how to make my webpage responsive.</p>
+    <p>As I was approaching college, I found a major called Interactive Design. This was a fusion between user experience and user interface design, with the knowledge and foundation of HTML, CSS, and JavaScript. During my time in this major, I fell in love with UX Design. I started to see more and more flaws with everyday apps I used and websites I would scroll through. I became conscious of the laws and principles in place that these apps and websites were breaking. Once I graduated I was about to instill UX processes into the companies where I worked. I introduced 22Miles to an lean UX process and how to effectively help our clients get a project that would look beautiful, and ensure the end-user could navigate it with ease. At Queer Global I was able to flush out and start user interviews. Learning about my users allows me to design for them, as well as empathize with them</p>
+    </div>
+</div>
+    <div class="column">
+      <img src="me.JPG" class="projectland">
+    </div>
+  </div>
+<!--Section 2-->
+<div class="ground2">
+<div class="title">Resume (Work)</div>
+<div class="row">
+    <div class="column2">
+      <h2>UX Designer</h2>
+     <i><p>22 Miles, Inc.</p></i> 
+      <h5>Jun 2021 - Present (9 months)</h5>
+      <p>Instilled a lean UX process, to meet the design goals of our client while not forgetting about their end user.  </p>
+    </br>
+    <h2>UX Designer</h2>
+    <i><p>Queer Global</p></i> 
+     <h5>Sep 2020 - Jan 2022  (1 year 5 months)</h5>
+     <p>Starting from the ground up researching and designing the QG website. Conducting User Interviews and a Competitive Audit. Using User Flows to design Low and High-Fidelity Prototypes. I started as a full-time employee and once I recived another job offer, I move to a volenteer position.</p>
+</br>
+<h2>UX Designer</h2>
+<i><p>PlanIt Mobile App - Contract</p></i> 
+ <h5>Mar 2020 - May 2020 (3 months)</h5>
+ <p>Created low and high-fidelity prototypes based on user goals and a primary persona. Conducted paper prototype testing.</p>
+</br>
+<h2>UX Lead</h2>
+<i><p>Life-Up Mobile App - Contract</p></i> 
+ <h5>Oct 2019 - Dec 2019 (3 months)</h5>
+ <p>Lead a team of UX Designers to create a fitness mobile app using Goal-Directed Design. Created Personas, Workflows, and conducted User Interviews on Low and High-Fidelity Prototypes.</p>
+    </div>
+  </div>
+</div>
+<div class="title">Education</div>
+<div class="row">
+    <div class="column2">
+      <h2>Kennesaw State University</h2>
+     <i><p>Bachelor of Science - BS, Interactive Design (GPA 3.6)</p></i> 
+      <h5>Aug 2016 - Jul 2020</h5>
+      <p>Activities and societies: KSU Sustainable Farm Volunteer and Theta Chi Fraternity</p>
+      <p>Completed immersive degree in Interactive Design (UX/UI ) under the mentorship of accomplished Design professors.</p>
+      <p>Crafted full portfolio of projects based on the goal-directed design process
+        Prototyped websites and apps applying robust design and user experience
+        Conducted Interviews in order to create User Personas, User stories, User Flows
+        Conducted User Testing.</p>
+        <p>Developed Brand Identities Including:
+            Brand Name, Logo Design, and Style Guide.</p>
+        <p>Built Low and High Fidelity Prototypes using Figma and Adobe XD.</p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  Ralston Fitler 2022 <a href="https://www.linkedin.com/in/ralstonfitler/"><img src="linkedin.png" width="55px"></a>
+</div>
+
+<script>
+var TxtType = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+};
+
+TxtType.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+    var that = this;
+    var delta = 200 - Math.random() * 100;
+
+    if (this.isDeleting) { delta /= 2; }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+    }
+
+    setTimeout(function() {
+    that.tick();
+    }, delta);
+};
+
+window.onload = function() {
+    var elements = document.getElementsByClassName('typewrite');
+    for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000}";
+    document.body.appendChild(css);
+};
+  </script>
+</body>
+</html>
